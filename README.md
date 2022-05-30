@@ -183,3 +183,4 @@ packer插件自动下载失败，网络问题。遇到此问题，可手动清�
 - makefile管理的项目： 使用 bear 工具（开源工具，自行下载），然后在项目工程下执行 `bear -- make` 
 - cmake管理的项目： 使用快捷键 `<space> + cg`
 # nvim
+# nvim_luafile
