@@ -39,12 +39,13 @@ iron.setup {
     -- Whether a repl should be discarded or not
     scratch_repl = true,
     -- Your repl definitions come here
---    repl_definition = {
---     sh = {
---        command = {"zsh"}
---      }
---    },
+    repl_definition = {
+     python = {
+        command = {"jupyter", "console"}
+      }
+    },
     repl_open_cmd ='below 15 split',
+    preferred = { python = "jupyter" },
     -- how the REPL window will be opened, the default is opening
     -- a float window of height 40 at the bottom.
   },
