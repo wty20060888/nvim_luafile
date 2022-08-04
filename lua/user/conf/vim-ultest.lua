@@ -7,6 +7,7 @@ vim.cmd [[
   let g:ultest_max_threads = 12
   let g:ultest_output_on_line = 0
   let g:ultest_use_pty = 1
+  let g:ultest_deprecation_notice = 0
 ]]
 
 

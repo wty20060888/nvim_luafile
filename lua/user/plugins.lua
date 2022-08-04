@@ -290,7 +290,19 @@ return packer.startup(function(use)
 })
   -- Jupyter.nvim
   use 'hkupty/iron.nvim'
-
+  --use {
+  --"ahmedkhalf/jupyter-nvim",
+  --run = ":UpdateRemotePlugins",
+  --config = function()
+  --  require("jupyter-nvim").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+ --   }
+ -- end
+--}
+  --use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
+  --use "untitled-ai/jupyter_ascending.vim"
 
 
   -- Automatically set up your configuration after cloning packer.nvim

@@ -31,6 +31,7 @@ M.setup = function()
     "nvim_context_vt",
     "filetype",
     "diffview",
+    "winshift"
   }
 
   local helper_set = {}
@@ -52,3 +53,4 @@ M.setup = function()
 end
 
 M.setup()
+
