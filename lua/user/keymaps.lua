@@ -159,6 +159,9 @@ keymap("n", "gcf", "<cmd>Dox<cr>", opts)
 keymap("n", "<leader>rf", ":%SnipRun<cr>", opts)
 keymap("v", "<leader>rs", ":%SnipRun<cr>", opts)
 
+-- iron 
+keymap("n", "<leader>ju", ":IronRepl<cr>", opts)
+
 -- spell check
 vim.cmd(
 [[
