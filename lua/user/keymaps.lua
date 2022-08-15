@@ -162,6 +162,9 @@ keymap("v", "<leader>rs", ":%SnipRun<cr>", opts)
 -- iron 
 keymap("n", "<leader>ju", ":IronRepl<cr>", opts)
 
+-- 查找文件夹
+keymap("n", "<leader>G", ":!open -R <cfile><cr>", opts)
+
 -- spell check
 vim.cmd(
 [[

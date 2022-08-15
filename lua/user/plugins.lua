@@ -303,6 +303,9 @@ return packer.startup(function(use)
 --}
   --use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
   --use "untitled-ai/jupyter_ascending.vim"
+  --markdown paste
+  use {"md-img-paste-devs/md-img-paste.vim"}
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
