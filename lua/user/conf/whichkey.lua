@@ -98,7 +98,7 @@ local mappings = {
   },
   -- ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["F"] = { "<cmd>lua require('telescope').extensions.live_grep_raw.live_grep_raw(require('telescope.themes').get_ivy())<cr>", "Find Text" },
-  ["s"] = {
+  ["D"] = {
     "<cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>",
     "Find Document Symbols",
   },
@@ -107,7 +107,7 @@ local mappings = {
     -- "<cmd>lua require('telescope.builtin').lsp_workspace_symbols()<cr>",
     "Find Symobls",
   },
-  ["p"] = { "<cmd>Telescope projects<cr>", "Projects" },
+  ["p"] = { "<cmd>Telescope projects<cr>", "PasteFromClipboard" },
 
   ["P"] = { "<cmd>SessionManager load_session<cr>", "Projects" },
 
@@ -115,23 +115,27 @@ local mappings = {
     "<cmd>UltestSummary<CR>", "Unit Test"
   },
 
-  ["o"] = {
+  ["G"] = {
     "<cmd>AerialToggle<CR>", "Outline"
   },
+  ["o"] = {
+    "<cmd>!open -R <cfile><CR>", "Goto Filefinder"
+  },
+
   ["v"] = {
     "<cmd>lua require('telescope').extensions.neoclip.default(require('telescope.themes').get_ivy())<cr>",
     "Clipboard Manager"
   },
 
   c = {
-    name = "CMake",
+    name = "CMake and autochdir",
     g = {"<cmd>CMake configure<CR>", "Configure"},
     t = {"<cmd>CMake select_target<CR>", "SelectTarget"},
     T = {"<cmd>CMake select_build_type<CR>", "SelectBuildType"},
     b = {"<cmd>CMake build<CR>", "BuildTarget"},
     a = {"<cmd>CMake build_all<CR>", "BuildAll"},
     r = {"<cmd>CMake build_and_run<CR>", "Run"},
-    d = {"<cmd>CMake build_and_debug<CR>", "DebugTarget"},
+    d = {"<cmd>set autochdir<CR>", "ChangetoCurrentDirectory"},
     c = {"<cmd>CMake cancel<CR>", "Cancel"},
     s = {"<cmd>CMake set_target_args<CR>", "SetArg"},
   },

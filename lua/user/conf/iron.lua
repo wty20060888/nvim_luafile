@@ -54,9 +54,9 @@ iron.setup {
   -- or use `should_map_plug = true` and map from you vim files
   keymaps = {
     send_motion = "<space>sc",
-    visual_send = "<space>ss",
+    visual_send = "<space>s",
     send_file = "<space>sf",
-    send_line = "<space>ss",
+    send_line = "<space>s",
     send_mark = "<space>sm",
     mark_motion = "<space>mc",
     mark_visual = "<space>mc",
