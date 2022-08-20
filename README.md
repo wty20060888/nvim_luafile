@@ -8,8 +8,7 @@
 
 1. clone本仓库，并在 `~/.config` 目录下建立nvim的软链接
   ```shell
-  git clone https://github.com/ravenxrz/dotfiles.git ~/.config/dotfiles
-  ln -s ~/.config/dotfiles/nvim ~/.config
+  git clone git@github.com:wty20060888/nvim_luafile.git ~/.config/nvim ~/.config/dotfiles
   ```
 
 2.执行 `nvim +PackerSync` 命令， 根据网络条件的不同，可能需要多次执行本命令，直到所有插件下载完成
