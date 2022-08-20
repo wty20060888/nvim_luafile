@@ -305,6 +305,8 @@ return packer.startup(function(use)
   --use "untitled-ai/jupyter_ascending.vim"
   --markdown paste
   use {"md-img-paste-devs/md-img-paste.vim"}
+  --markdown table mode
+  use {"dhruvasagar/vim-table-mode"}
 
 
   -- Automatically set up your configuration after cloning packer.nvim
