@@ -177,6 +177,10 @@ return packer.startup(function(use)
     "phaazon/hop.nvim", -- like easymotion, but more powerful
     branch = "v1", -- optional but strongly recommended
   }
+  --use({
+  --'mrjones2014/dash.nvim',
+  --run = 'make install',
+  --})
   -- use { "rhysd/accelerated-jk", event = "BufReadPost" }
   -- use "famiu/bufdelete.nvim"
 
@@ -195,7 +199,7 @@ return packer.startup(function(use)
   use "theHamsta/nvim-dap-virtual-text"
   use "rcarriga/nvim-dap-ui"
   -- use "nvim-telescope/telescope-file-browser.nvim"
-  -- use "mfussenegger/nvim-dap-python"    -- debug python
+  use "mfussenegger/nvim-dap-python"    -- debug python
   -- use { "leoluz/nvim-dap-go", module = "dap-go" } -- debug golang
   -- use { "jbyuki/one-small-step-for-vimkind", module = "osv" } -- debug any Lua code running in a Neovim instance
 

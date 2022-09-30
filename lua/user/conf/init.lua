@@ -31,6 +31,7 @@ M.setup = function()
     "nvim_context_vt",
     "filetype",
     "diffview",
+    "dash",
     "winshift"
   }
 

@@ -42,6 +42,7 @@ iron.setup {
     repl_definition = {
      python = {
         command = {"jupyter", "console"}
+        --command = {"ipython", "--no-autoindent"}
       }
     },
     repl_open_cmd ='below 15 split',
@@ -62,7 +63,7 @@ iron.setup {
     mark_visual = "<space>mc",
     remove_mark = "<space>md",
     cr = "<space>s<cr>",
-    interrupt = "<space>s<space>",
+    interrupt = "<space>si",
     exit = "<space>sq",
     clear = "<space>cl",
   },
@@ -72,3 +73,26 @@ iron.setup {
     italic = true
   }
 }
+
+
+--vim.cmd(
+--[[
+--vnoremap <leader>s <Esc>:call SendToTerminal()<CR>
+--function! SendToTerminal()
+--  let buff_n=term_list()
+--  if len(buff_n)>0
+--    let buff_n=buff_n[0]
+--    let lines=getline(getpos("'<")[1],getpos("'>")[1])
+--    let indent=match(lines[0],"    ")
+--    for l in lines
+--      let new_indent=match(lines[0],"    ")
+--      if new_indent==0
+--        call term_sendkeys(buff_n,l."\<CR>")
+--      else
+--        call term_sendkeys(buff_n,l[indent:]."\<CR>")
+--      endif
+--    endfor
+--  endif
+--endfunction
+--]]
+--)
