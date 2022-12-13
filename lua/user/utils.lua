@@ -39,4 +39,15 @@ vim.api.nvim_create_user_command('Picocom',
   end,
   { nargs = 1})
 
+vim.api.nvim_create_user_command('Tes',
+--使用f-args的方法(与下面的方法一样效果)
+  --"call v:lua.print([<f-args>][3])",
+  function(opts)
+    print(opts.fargs[1])
+    for i,k in ipairs(opts.fargs) do
+      print(i, k)
+    end
+  end,
+  { nargs = "*"})
+
 return M
