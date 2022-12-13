@@ -82,7 +82,7 @@ bufferline.setup ({
 
 vim.cmd(
 [[
-nnoremap <silent><c-l> :BufferLineCycleNext<CR>,
-nnoremap <silent><c-h> :BufferLineCyclePrev<CR>
+nnoremap <silent><leader>l :BufferLineCycleNext<CR>,
+nnoremap <silent><leader>h :BufferLineCyclePrev<CR>
 ]]
 )
