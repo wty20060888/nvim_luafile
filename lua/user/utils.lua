@@ -23,13 +23,25 @@ end
 
 vim.api.nvim_create_user_command('ArduinoCompile',
   function(opts)
+    if (opts.fargs[1] == "uno")
+      then
     vim.cmd([[!arduino-cli compile --fqbn arduino:avr:uno ../%<]])
+  elseif (opts.fargs[1] == "nodemcu")
+    then
+    vim.cmd([[!arduino-cli compile --fqbn esp8266:esp8266:nodemcuv2 ../%<]])
+  end
   end,
   { nargs = "?" })
 
 vim.api.nvim_create_user_command('ArduinoUpload',
   function(opts)
+    if (opts.fargs[1] == "uno")
+      then
     vim.cmd([[!arduino-cli upload -p $(find /dev//cu.usbmodem*) --fqbn arduino:avr:uno ../%<]])
+    elseif (opts.fargs[1] == "nodemcu")
+      then
+    vim.cmd([[!arduino-cli upload -p $(find /dev//cu.wchusbserial*) --fqbn esp8266:esp8266:nodemcuv2 ../%<]])
+  end
   end,
   { nargs = "?" })
 
